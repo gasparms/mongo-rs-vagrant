@@ -1,8 +1,3 @@
-hostname "mongo1"
-echo "mongo1" > /etc/hostname
-echo "192.168.33.11 mongo1" >> /etc/hosts
-echo "192.168.33.12 mongo2" >> /etc/hosts
-echo "192.168.33.13 mongo3" >> /etc/hosts
 
 # get mongodb
 cd /opt/
@@ -29,7 +24,7 @@ echo "Waiting a bit for replica init..."
 sleep 10
 
 /opt/mongo/bin/mongo 192.168.33.11 <<EOF
-rs.add("mongo2")
-rs.add("mongo3")
+rs.add("192.168.33.12")
+rs.add("192.168.33.13")
 rs.conf()
 EOF

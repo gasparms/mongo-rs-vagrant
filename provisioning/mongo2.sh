@@ -1,8 +1,3 @@
-hostname "mongo2"
-echo "mongo2" > /etc/hostname
-echo "192.168.33.12 mongo2" >> /etc/hosts
-echo "192.168.33.11 mongo1" >> /etc/hosts
-echo "192.168.33.13 mongo3" >> /etc/hosts
 
 # get mongodb
 cd /opt/
