@@ -15,7 +15,7 @@ $ vagrant up
 
 ### Connect to Mongo
 
-After a few minutes, replica set will be available. F
+After a few minutes, replica set will be available.
 
 ```sh
 $ mongo --host set0/192.168.33.11:27017,192.168.33.12:27017,192.168.33.13:27017
